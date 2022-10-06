@@ -1,38 +1,86 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .App {
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-color: transparent;
+    margin-left: 0px;
+    box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+}
+.card {
+    display: flex;
+    flex-direction: column;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.list {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  .check {
+    width: 26px;
   }
-}
+  .foodimg {
+    padding: 15px;
+    background: #ddd6e8;
+    border: 1px solid gray;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1, h2, ul, p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    align-self: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  }
+  li {
+    display: block;
+    padding: .4em .4em .4em .4em;
+    margin: .5em .5em .5em .5em;
+    background: #ddd6e8;
+    align-self: center;
+  }
+  li:hover {
+    background: #dcdde1;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    background: #dbecc4;
+    border: none;
+    border-radius: 12px;
+    margin-top: 10px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  
