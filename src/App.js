@@ -49,14 +49,15 @@ function App() {
           onChange={myRecepeSearch}
           value = {mySearch}>
           </input>
-        </form>
-      </div>
-
-      <div className="container">
+          <div className="btn">
         <button>
           <img src={icon} alt="icon" className='icon' />
         </button>
       </div>
+        </form>
+      </div>
+
+      
 
       <div className='box'>
             {myRecipes.map(element => (
